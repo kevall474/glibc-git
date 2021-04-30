@@ -131,7 +131,7 @@ package_glibc-git() {
           etc/locale.gen
           etc/nscd.conf)
   conflicts=('glibc')
-  provides=("glibc=$pkgver" "glibc")
+  provides=("glibc=2.33" "glibc")
 
   install -dm755 "$pkgdir/etc"
   touch "$pkgdir/etc/ld.so.conf"
