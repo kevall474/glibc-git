@@ -118,7 +118,7 @@ package_lib32-glibc-git(){
   depends=("glibc=$pkgver")
   options+=('!emptydirs')
   conflicts=('lib32-glibc')
-  provides=("lib32-glibc=$pkgver" "lib32-glibc")
+  provides=("lib32-glibc=2.33" "lib32-glibc")
 
   cd lib32-glibc-build
 
