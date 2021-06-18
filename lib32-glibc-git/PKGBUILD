@@ -31,7 +31,7 @@ md5sums=('SKIP'
 
 pkgver(){
  cd glibc
- echo echo $(cat version.h | grep '#define VERSION' | sed "s/#define//" | sed "s/VERSION//" | sed 's/"//' | sed 's/"//' | sed 's/ //').$(date -I | sed 's/-/_/' | sed 's/-/_/').$(git rev-list --count HEAD).$(git rev-parse --short HEAD)
+ echo $(cat version.h | grep '#define VERSION' | sed "s/#define//" | sed "s/VERSION//" | sed 's/"//' | sed 's/"//' | sed 's/ //').$(date -I | sed 's/-/_/' | sed 's/-/_/').$(git rev-list --count HEAD).$(git rev-parse --short HEAD)
 }
 
 prepare(){
